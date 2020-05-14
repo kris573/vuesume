@@ -1,0 +1,109 @@
+{
+  // 页面title
+  title: "我的主页",
+
+
+  // banner页
+  banner: {
+    anchor: {
+      id: "banner",
+      icon: "home",
+      name: "首页",
+    },
+    title: "我的主页"
+  },
+  // 正文
+  // 不要修改各模块的 anchor.id
+  // 通过display控制模块是否展示
+  // 通过列表顺序控制模块展示顺序
+  modules: [
+    // 关于页
+    {
+      display: true,
+      anchor: {
+        id: "about",
+        icon: "user",
+        name: "关于"
+      },
+      header: {
+        title: "information",
+        subtitle: "about me",
+      },
+      content: {
+        name: "高磊",
+        md: "出生年月：1992-06\
+        \n籍贯：河北保定\
+        \n学历：硕士\
+        \n毕业年份：2018\
+        \n工作地：北京",
+      },
+      // key - value 数量及内容完全自定义，链接自动识别
+      keys: {
+        "GitHub主页": "https://github.com/kris573",
+        "博客": "https://blog.csdn.net/weixin_39995352",
+      },
+    },
+    // 履历
+    {
+      display: true,
+      anchor: {
+        id: "experience",
+        icon: "idcard",
+        name: "经历"
+      },
+      header: {
+        title: "experience",
+        subtitle: "my experience",
+      },
+      cards: [
+        {
+          title: "京东集团-京东物流",
+          subtitle: "2018-11 至 今",
+          md: "<!--**<u>数据分析师</u>**-->\
+          \n\
+          \n负责京东物流创新业务部的对外供应链咨询中心的数据分析工作\
+          \n",
+        },
+        {
+          title: "顺丰科技\\顺丰速运有限公司",
+          subtitle: "2018-7 至 2019-9",
+          md: "<!--**<u>大数据挖掘与分析工程师</u>**-->\
+          \n\
+          \n负责顺丰鄂州枢纽项目的数据分析工作\
+          \n"
+        },
+        {
+          title: "天津大学",
+          subtitle: "2015-09 至 2018-06",
+          md: "**<u>研究生  理论物理学</u>**\
+          \n\
+          \n<!--**专业**：理论物理学-->\
+          \n",
+        },
+        {
+          title: "河北科技大学",
+          subtitle: "2011-09 至 2015-09",
+          md: "**<u>本科生  应用物理学</u>**\
+          \n\
+          \n<!--**专业**：应用物理学-->\
+          \n",
+        },
+      ],
+    },
+    // 博客页
+    {
+      display: true,
+      anchor: {
+        id: "blog",
+        icon: "profile",
+        name: "博客",
+      },
+      header: {
+        title: "blog",
+        subtitle: "latest blog",
+      },
+      blog: "https://blog.csdn.net/weixin_39995352",
+      rss: "https://blog.csdn.net/weixin_39995352",
+    },
+  ],
+}
